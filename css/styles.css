@@ -12,9 +12,28 @@
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
 .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   text-decoration: none;
 }
 
@@ -23,7 +42,24 @@ body {
   color: #434455;
   background-color: var(--card-bg-color);
 }
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-container {
+  display: flex;
+}
+
+.page-nav {
+  display: flex;
+  margin-right: auto;
+}
+
 .logo {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -39,6 +75,11 @@ body {
   color: var(--txt-color-dark-theme);
 }
 
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
 .menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -52,8 +93,15 @@ body {
   color: var(--active-color);
 }
 .contacts {
+  display: flex;
+
   font-style: normal;
 }
+
+.contacts-nav {
+  display: flex;
+}
+
 .contact-link {
   font-size: 16px;
   line-height: 1.5;
@@ -66,47 +114,46 @@ body {
   color: var(--active-color);
 }
 
-.container {
-  width: 1158px;
-  margin-top: 0;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header-container {
-  margin-bottom: 0;
+.contact-link-mail {
+  margin-right: 40px;
 }
 
 .main-title {
+  display: block;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 496px;
+  padding: 188px auto 292px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-txt-color);
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 496px;
 }
 
 .hero {
   background-color: var(--dark-bg-color);
 }
 .order-serv-btn {
+  min-width: 169px;
+  min-height: 56px;
+  padding: 16px 32px;
+  margin-bottom: 188px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white-txt-color);
+
   background: var(--cta-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  padding: 16px 32px;
 }
 
 .order-serv-btn:hover,
@@ -130,6 +177,19 @@ body {
   padding: 12px 24px;
 }
 
+.section {
+  padding: 120px 0;
+}
+
+.about {
+  padding-top: 0;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--white-txt-color);
@@ -137,6 +197,8 @@ body {
 }
 
 .title {
+  margin-bottom: 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -144,22 +206,26 @@ body {
   text-transform: capitalize;
   color: var(--secondary-txt-color);
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 72px;
 }
 
 .subtitle {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-color);
-  margin-top: 0;
-  margin-bottom: 8px;
 }
 
-.team-container {
-  padding-top: 120px;
+.about-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team {
@@ -174,16 +240,54 @@ body {
   margin-bottom: 32px;
 }
 
+.team-subtitle,
+.team-text {
+  text-align: center;
+}
+
 .text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-txt-color);
-  margin-top: 0;
+}
+
+.team-text {
   margin-bottom: 32px;
 }
 
+.btn-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.portfolio-section {
+  padding-top: 96px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-subtitle,
+.portfolio-text {
+ margin-left: 16px;
+}
+
+.portfolio-text {
+  margin-bottom: 32px;
+}
+
+.section-footer {
+  padding: 100px 0;
+}
+
 .text-footer {
+  width: 264px;
   color: var(--txt-color-dark-theme);
 }
 
@@ -191,8 +295,7 @@ body {
   background-color: var(--dark-bg-color);
 }
 
-.footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-bottom: 0;
+.footer-logo {
+  padding: 0;
+  margin-bottom: 16px;
 }
